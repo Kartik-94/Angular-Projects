@@ -10,7 +10,8 @@ import { from } from 'rxjs';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
