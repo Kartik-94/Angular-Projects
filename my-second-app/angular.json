@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "my-second-app": {
@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modeule/bootstarp/dist/css/bootstrap.min.css",
+              "node_modules/bootstarp/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-second-app"
+    }
+  },
+  "defaultProject": "my-second-app",
+  "cli": {
+    "analytics": false
+  }
 }
