@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
 ### Output
-<a href="assign1-result.PNG"></a>
+<img src="assign1-result.PNG"/>
 
 ## Development server
 
