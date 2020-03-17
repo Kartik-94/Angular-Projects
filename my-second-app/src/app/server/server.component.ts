@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerComponent implements OnInit {
   serverID: number = 10;
-  serverStatus: string = 'offline'; 
+  serverStatus: string = 'offline';
+  allowNewServer = true;
   constructor() { }
 
-
   ngOnInit(): void {
+  setTimeout(() =>{
+    this.allowNewServer = false;
+  },2000); 
   }
 
 }
