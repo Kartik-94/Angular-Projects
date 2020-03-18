@@ -9,12 +9,23 @@ export class ServerComponent implements OnInit {
   serverID: number = 10;
   serverStatus: string = 'offline';
   allowNewServer = true;
-  constructor() { }
+  serverCreationCode: string;
+  textColor: string;
+  constructor() { 
+    this.serverCreationCode = "No Server Created";
+    this.textColor = "red";
 
-  ngOnInit(): void {
-  setTimeout(() =>{
-    this.allowNewServer = false;
-  },2000); 
+    setTimeout(() =>{
+      this.allowNewServer = false;
+    },2000); 
   }
 
+  ngOnInit(): void {
+  }
+
+  onServerClick(){
+    this.serverCreationCode = "New Server Created !!!!"
+    this.textColor = "green";
+  }
+  
 }
