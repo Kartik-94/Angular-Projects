@@ -1,3 +1,5 @@
+ <input type="text" class="form-control" (input)='onMessageInput($event)'><br>
+ <p>{{serverName}}</p>
  <button class="btn btn-primary" [disabled]='allowNewServer' (click)='onServerClick()' >Add Server</button>
  <br/><br/>
  <p [style.color]='textColor'>{{serverCreationCode}}</p> 

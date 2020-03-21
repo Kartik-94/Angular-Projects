@@ -11,6 +11,8 @@ export class ServerComponent implements OnInit {
   allowNewServer = true;
   serverCreationCode: string;
   textColor: string;
+  serverName: string;
+
   constructor() { 
     this.serverCreationCode = "No Server Created";
     this.textColor = "red";
@@ -25,7 +27,11 @@ export class ServerComponent implements OnInit {
 
   onServerClick(){
     this.serverCreationCode = "New Server Created !!!!"
-    this.textColor = "green";
+    this.textColor = "green";  
+  }
+
+  onMessageInput(event: any){
+    this.serverName=event.target.value;
   }
   
 }
